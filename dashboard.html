@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Login App</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+        <link rel="stylesheet" href="./styledash.css">
+
+        <style>
+            body
+            {
+                background: #67B26F;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                padding: 0;
+                margin: 0;
+                font-family: 'Lato', sans-serif;
+                color: #000;
+            }
+
+            .btn-logout
+            {
+                float: right;
+            }
+
+            .container2
+            {
+                height: 200px;
+                width: 200px;
+                float: right;
+                margin-right: 20px;
+            }
+
+
+            .student-profile .card
+            {
+                border-radius: 10px;
+            }
+
+            .student-profile .card .card-header .profile_img
+            {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                margin: 10px auto;
+                border: 10px solid #ccc;
+                border-radius: 50%;
+            }
+
+            .student-profile .card h3
+            {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .student-profile .card p
+            {
+                font-size: 16px;
+                color: #000;
+            }
+
+            .student-profile .table th,
+            .student-profile .table td
+            {
+                font-size: 14px;
+                padding: 5px 10px;
+                color: #000;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <marquee bgcolor="grey"><h2><b>
+            Welcome to Amity University...
+        <h2><b></marquee>
+        <div class="container2">
+            <a href="./login">
+                <button class="btn-logout"><b>LOGOUT</b></button>
+            </a>
+        </div>
+        <br><br><br>
+        <div class="student-profile py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-transparent text-center">
+                                <h3>Hello {{user}}!!</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0"><strong class="pr-1">Student ID:</strong>321000001</p>
+                                <p class="mb-0"><strong class="pr-1">Year:</strong>3<sup>rd</sup></p>
+                                <p class="mb-0"><strong class="pr-1">Section:</strong>A</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-transparent border-0">
+                                <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+                            </div>
+                            <div class="card-body pt-0">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th width="30%">Course</th>
+                                        <td width="2%">:</td>
+                                        <td>B.Tech (CSE)</td>
+                                    </tr>
+                                    <tr>
+                                        <th width="30%">Academic Year	</th>
+                                        <td width="2%">:</td>
+                                        <td>2020-2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th width="30%">Gender</th>
+                                        <td width="2%">:</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <th width="30%">School</th>
+                                        <td width="2%">:</td>
+                                        <td>School of Engineering and Technology</td>
+                                    </tr>
+                                    <tr>
+                                        <th width="30%">Campus Location</th>
+                                        <td width="2%">:</td>
+                                        <td>Gurugram, Haryana</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="height: 26px"></div>
+                            <div class="card shadow-sm">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Know Your Campus More</h3>
+                                </div>
+                                <div class="card-body pt-0">
+                                    Amity Universityis a private university located in the beautiful city of Haryana-Gurgaon and was established in the year 2010.
+                                    The institute is approved by All India Council of Technical Education (AICTE) and the University Grants Commission (UGC). ABC University offers various UG, Integrated, PG, Diploma, etc. courses.
+                                    <br><br><br>
+                                    <center><h4><a href="https://www.google.com/maps/place/Amity+University+Gurugram/@28.3152957,76.9120652,17z/data=!4m5!3m4!1s0x390d39544502d985:0xfeb54e790052ee13!8m2!3d28.315291!4d76.9142539">VIEW UNIVERSITY ON MAPS</a></h4></center>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        <center><iframe width="1600" height="1000" src="https://www.youtube.com/embed/YPIJkLBKg2k">
+        </iframe></center>
+       <br><br>
+    </body>
+</html>
